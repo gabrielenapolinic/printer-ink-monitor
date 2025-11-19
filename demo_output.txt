@@ -1,0 +1,55 @@
+# Demo Output
+
+## List printers
+```bash
+$ printer-ink-monitor list
+
+INFO: Connessione CUPS stabilita
+Trovate 2 stampanti:
+------------------------------------------------------------
+Nome: LBP2900
+Modello: Canon LBP-2900 CAPT GDI printer, 0.1.0
+Stato: 🔴 Offline - Unplugged or turned off
+URI: usb://Canon/LBP2900?serial=0000A277J9i6
+------------------------------------------------------------
+Nome: M2070
+Modello: Samsung M2070 Series
+Stato: 🔴 Offline - Unplugged or turned off
+URI: usb://Samsung/M2070%20Series?serial=ZF5RB8KK6D03QWZ&interface=1
+------------------------------------------------------------
+```
+
+## Check ink status
+```bash
+$ printer-ink-monitor status
+
+INFO: Connessione CUPS stabilita
+
+=== LBP2900 ===
+Modello: Canon LBP-2900 CAPT GDI printer, 0.1.0
+❌ Stampante non supporta report livelli inchiostro
+
+=== M2070 ===
+Modello: Samsung M2070 Series
+❌ Stampante non supporta report livelli inchiostro
+```
+
+## JSON output
+```bash
+$ printer-ink-monitor status --json
+
+{
+  "LBP2900": {
+    "printer": "LBP2900",
+    "supported": false,
+    "levels": [],
+    "error": "Stampante non supporta report livelli inchiostro"
+  },
+  "M2070": {
+    "printer": "M2070",
+    "supported": false,
+    "levels": [],
+    "error": "Stampante non supporta report livelli inchiostro"
+  }
+}
+```

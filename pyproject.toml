@@ -1,0 +1,50 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "printer-ink-monitor"
+version = "0.1.0"
+authors = [
+    {name = "Gabriele", email = "gabriele@example.com"},
+]
+description = "Monitora il livello di inchiostro delle stampanti"
+readme = "README.md"
+license = {text = "GPL-3.0"}
+requires-python = ">=3.8"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: End Users/Desktop",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: System :: Hardware :: Hardware Drivers",
+    "Topic :: Printing",
+]
+keywords = ["printer", "ink", "toner", "cups", "monitor"]
+dependencies = [
+    "pycups",
+]
+
+[project.optional-dependencies]
+snmp = ["pysnmp"]
+dev = ["pytest", "pytest-cov", "black", "flake8"]
+
+[project.urls]
+Homepage = "https://github.com/gabri/printer-ink-monitor"
+"Bug Reports" = "https://github.com/gabri/printer-ink-monitor/issues"
+Source = "https://github.com/gabri/printer-ink-monitor"
+
+[project.scripts]
+printer-ink-monitor = "printer_ink_monitor.cli.main:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-dir]
+"" = "src"
