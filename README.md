@@ -2,8 +2,6 @@
 
 A Python application to monitor printer ink/toner levels on Linux systems.
 
-*Un'applicazione Python per monitorare il livello di inchiostro delle stampanti su sistemi Linux.*
-
 ## Features
 
 - List all configured printers in the system
@@ -53,11 +51,11 @@ printer-ink-monitor status --json
 ### List command
 ```
 $ printer-ink-monitor list
-Trovate 2 stampanti:
+Found 2 printers:
 ------------------------------------------------------------
-Nome: LBP2900
-Modello: Canon LBP-2900 CAPT GDI printer, 0.1.0
-Stato: 🔴 Offline - Unplugged or turned off
+Name: LBP2900
+Model: Canon LBP-2900 CAPT GDI printer, 0.1.0
+Status: 🔴 Offline - Unplugged or turned off
 URI: usb://Canon/LBP2900?serial=0000A277J9i6
 ------------------------------------------------------------
 ```
@@ -65,13 +63,12 @@ URI: usb://Canon/LBP2900?serial=0000A277J9i6
 ### Status with supported printer (example)
 ```
 === HP_OfficeJet_Pro ===
-Modello: HP OfficeJet Pro 8020 series
-Livelli inchiostro:
+Model: HP OfficeJet Pro 8020 series
+Ink levels:
   - Black (black): 85%
   - Cyan (cyan): 42%
   - Magenta (magenta): 67%
   - Yellow (yellow): 23%
-```
 
 ## Printer Compatibility
 
