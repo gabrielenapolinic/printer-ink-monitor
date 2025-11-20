@@ -1,0 +1,14 @@
+README.md
+pyproject.toml
+src/printer_ink_monitor/__init__.py
+src/printer_ink_monitor.egg-info/PKG-INFO
+src/printer_ink_monitor.egg-info/SOURCES.txt
+src/printer_ink_monitor.egg-info/dependency_links.txt
+src/printer_ink_monitor.egg-info/entry_points.txt
+src/printer_ink_monitor.egg-info/requires.txt
+src/printer_ink_monitor.egg-info/top_level.txt
+src/printer_ink_monitor/cli/__init__.py
+src/printer_ink_monitor/cli/main.py
+src/printer_ink_monitor/core/__init__.py
+src/printer_ink_monitor/core/cups_handler.py
+src/printer_ink_monitor/utils/__init__.py

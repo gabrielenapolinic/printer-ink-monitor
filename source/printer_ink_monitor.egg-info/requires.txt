@@ -1,0 +1,10 @@
+pycups
+
+[dev]
+pytest
+pytest-cov
+black
+flake8
+
+[snmp]
+pysnmp

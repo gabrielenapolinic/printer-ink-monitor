@@ -1,0 +1,2 @@
+[console_scripts]
+printer-ink-monitor = printer_ink_monitor.cli.main:main
